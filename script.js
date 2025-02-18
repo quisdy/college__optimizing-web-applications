@@ -10,9 +10,3 @@ function loadHTML(elementId, filePath) {
 // Загружаем header и footer с абсолютными путями
 loadHTML('header', 'header.html');
 loadHTML('footer', 'footer.html');
-
-
-
-function header_burger{
-
-}
