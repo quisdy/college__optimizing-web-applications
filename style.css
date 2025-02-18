@@ -459,17 +459,40 @@ header {
 	.container_header_side_down {
 		margin: 0 25px;
 		display: flex;
-		width: 80%;
+		width: 90%;
 		align-items: center;
 		flex-direction: row;
 		justify-content: space-between;
 	}
 
-	
+
 }
 
 
+@media (max-width: 960px) {
+	:root {
+		--gap_1: 100px;
+		--gap_2: 200px;
+		--gap_section: 150px;
+	}
 
+	.container_header_side_down {
+		display: none;
+	}
+
+	.container_header {
+		flex-direction: row;
+		justify-content: center;
+		align-content: center;
+	}
+
+	.menu_midle {
+		width: 60%;
+	}
+
+
+
+}
 
 
 /* СТИЛИЗАЦИЯ FOOTER */
