@@ -502,7 +502,7 @@ header {
 	}
 
 	.header_burger {
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		width: 50px;
