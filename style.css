@@ -1,50 +1,48 @@
-/* ОБЩИЕ СТИЛИ ВСЕХ СТРАНИЦ  */
 * {
-	padding: 0px;
-	margin: 0px;
-	border: none;
+	padding: 0;
+	margin: 0;
+	border: none
 }
 
 *,
-*::before,
-*::after {
-	box-sizing: border-box;
+::after,
+::before {
+	box-sizing: border-box
 }
 
-html,
-body {
-	font-size: 62.5%;
+body,
+html {
+	font-size: 62.5%
 }
 
 @font-face {
 	font-family: 'Geist Black';
-	src: url('fonts/Geist-Black.woff2') format('woff2');
+	src: url(fonts/Geist-Black.woff2) format('woff2');
 	font-weight: 900;
-	font-style: normal;
+	font-style: normal
 }
 
 @font-face {
 	font-family: 'Geist Regular';
-	src: url('fonts/Geist-Regular.woff2') format('woff2');
-	font-weight: normal;
-	font-style: normal;
+	src: url(fonts/Geist-Regular.woff2) format('woff2');
+	font-weight: 400;
+	font-style: normal
 }
 
 @font-face {
 	font-family: 'Geist SemiBold';
-	src: url('fonts/Geist-SemBold.woff2') format('woff2');
+	src: url(fonts/Geist-SemBold.woff2) format('woff2');
 	font-weight: 600;
-	font-style: normal;
+	font-style: normal
 }
 
 @font-face {
-	font-family: 'Kudry';
-	src: url('fonts/kudry.otf') format('opentype');
-	font-weight: normal;
-	font-style: normal;
+	font-family: Kudry;
+	src: url(fonts/kudry.otf) format('opentype');
+	font-weight: 400;
+	font-style: normal
 }
 
-/* ПЕРЕМЕННЫЕ */
 :root {
 	--accent-color: #8C7FCC;
 	--accent-color-light: #c8c8ff;
@@ -52,42 +50,39 @@ body {
 	--text-color-white: #FBFBFF;
 	--gap_1: 150px;
 	--gap_2: 250px;
-	--gap_section: 100px;
+	--gap_section: 100px
 }
 
-/* стилизация элементов форматирования */
 u {
-	color: var(--text-color-white);
+	color: var(--text-color-white)
 }
 
-/* ссылки, списки */
 a,
 a:link,
 a:visited {
-	color: var(--text-color-white);
+	color: var(--text-color-white)
 }
 
 a:hover {
-	color: var(--accent-color);
+	color: var(--accent-color)
 }
 
 #a_clean {
-	text-decoration: none;
+	text-decoration: none
 }
 
 ul,
 ul li {
-	list-style: none;
+	list-style: none
 }
 
-/* Common */
-nav,
 footer,
 header,
-section,
-main {
+main,
+nav,
+section {
 	display: block;
-	overflow: hidden;
+	overflow: hidden
 }
 
 h1,
@@ -97,53 +92,51 @@ h4,
 p {
 	font-size: inherit;
 	font-weight: inherit;
-	letter-spacing: 0.5rem;
+	letter-spacing: .5rem
 }
 
-/* заголовки секций */
 h1 {
 	color: var(--accent-color);
-	font-family: "Geist";
+	font-family: Geist;
 	font-size: 11rem;
 	font-weight: 500;
 	line-height: 11rem;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 #h1_white {
-	color: var(--text-color-white);
+	color: var(--text-color-white)
 }
 
 .container_h1 {
 	width: fit-content;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 30px;
+	margin-bottom: 30px
 }
 
 .container_h1_ {
 	width: fit-content;
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: center
 }
 
-/* название новых коллекций и утп  */
 h2 {
 	color: var(--text-color);
-	font-family: "Kudry";
+	font-family: Kudry;
 	font-size: 8rem;
 	font-weight: 300;
 	line-height: 7rem;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 .h2_purple {
-	color: var(--accent-color);
+	color: var(--accent-color)
 }
 
 .h2_white {
-	color: var(--text-color-white);
+	color: var(--text-color-white)
 }
 
 .container_h2 {
@@ -151,73 +144,69 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	row-gap: 1.5rem;
-	margin-bottom: 20px;
+	margin-bottom: 20px
 }
 
 .container_h2_ {
-	text-align: center;
+	text-align: center
 }
 
-/* услуги, каталог */
 h3 {
 	color: var(--text-color);
-	font-family: "Kudry";
+	font-family: Kudry;
 	font-size: 4.8rem;
 	font-weight: 300;
 	line-height: 4.8rem;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 #h3_footer {
-	color: var(--text-color-white);
+	color: var(--text-color-white)
 }
 
-/* для кнопок */
 h4 {
 	color: var(--text-color-white);
-	font-family: "Geist";
+	font-family: Geist;
 	font-size: 1.6rem;
 	font-weight: 800;
 	line-height: 1.6rem;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
 .h4_accent {
-	color: var(--accent-color);
+	color: var(--accent-color)
 }
 
-/* текст */
 p {
 	color: var(--text-color);
-	font-family: "Geist";
+	font-family: Geist;
 	font-size: 1.6rem;
 	font-weight: 400;
 	line-height: 2rem;
-	text-align: justify;
+	text-align: justify
 }
 
 .name_item_font,
 .name_item_price {
 	font-size: 1.8rem;
 	margin-bottom: 15px;
-	text-align: center;
+	text-align: center
 }
 
 #footer_font {
 	color: var(--text-color-white);
-	width: fit-content;
+	width: fit-content
 }
 
 img {
 	vertical-align: top;
 	max-width: 100%;
-	height: auto;
+	height: auto
 }
 
-/* ФОРМА И КНОПКИ*/
 input,
-textarea,
-select {
+select,
+textarea {
 	color: var(--accent-color);
 	font-family: Geist;
 	font-size: 15px;
@@ -225,48 +214,47 @@ select {
 	line-height: 15px;
 	letter-spacing: 5px;
 	text-transform: none;
-	padding-left: 20px;
+	padding-left: 20px
 }
 
-input:focus,
-input:active {
-	border-color: var(--accent-color);
+input:active,
+input:focus {
+	border-color: var(--accent-color)
 }
 
 ::placeholder {
 	color: var(--accent-color-light);
-	font-family: "Geist";
+	font-family: Geist;
 	font-size: 15px;
 	font-weight: 600;
 	line-height: 15px;
 	letter-spacing: 5px;
 	text-transform: none;
-	padding-left: 20px;
+	padding-left: 20px
 }
 
 input {
 	height: 50px;
 	border: solid 3px;
 	border-color: var(--accent-color-light);
-	border-radius: 40px;
+	border-radius: 40px
 }
 
 .checkbox_ {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	accent-color: #A4A6FF;
-	column-gap: 15px;
+	accent-color: var(--accent-color);
+	column-gap: 15px
 }
 
 label {
-	cursor: pointer;
+	cursor: pointer
 }
 
-/* кнопки */
-button:focus,
+button,
 button:active,
-button {
+button:focus {
 	width: fit-content;
 	padding: 0 100px;
 	height: 90px;
@@ -275,48 +263,44 @@ button {
 	background: var(--accent-color);
 	align-self: center;
 	cursor: pointer;
-	transition: 1s;
+	transition: 1s
 }
 
 #button_white {
-	background: var(--text-color-white);
+	background: var(--text-color-white)
 }
 
-button:focus,
 button:active,
+button:focus,
 button:hover {
 	transform: scale(1.1);
 	background: var(--accent-color-light);
-	color: var(--accent-color);
+	color: var(--accent-color)
 }
 
-
-/* ПОЗИЦИОНИРОВАНИЕ */
 #gap_1 {
-	margin-left: var(--gap_1);
+	margin-left: var(--gap_1)
 }
 
 #gap_2 {
-	margin-left: var(--gap_2);
+	margin-left: var(--gap_2)
 }
 
 #gap_section {
-	padding-top: var(--gap_section);
+	padding-top: var(--gap_section)
 }
 
-/* для отступа слева для текста */
 #text {
-	padding-left: var(--gap_2);
+	padding-left: var(--gap_2)
 }
 
 .section_text {
 	width: 900px;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center
 }
 
-/* бегущая строка */
 .marquee {
 	display: flex;
 	flex-direction: row;
@@ -329,41 +313,37 @@ button:hover {
 	box-sizing: border-box;
 	position: relative;
 	background-color: var(--accent-color);
-	cursor: default;
+	cursor: default
 }
 
 .marquee-content {
 	display: flex;
 	flex-direction: row;
 	column-gap: 50px;
-	animation: marquee 15s linear infinite;
+	animation: marquee 15s linear infinite
 }
 
 @keyframes marquee {
 	from {
-		transform: translateX(0);
+		transform: translateX(0)
 	}
 
 	to {
-		transform: translateX(-50%);
+		transform: translateX(-50%)
 	}
 }
 
 .lustre {
-	height: 80px;
+	height: 80px
 }
 
-
-
-
-/* СТИЛИЗАЦИЯ HEADER */
 header {
 	position: fixed;
 	width: 100%;
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center
 }
 
 .container_header {
@@ -374,7 +354,7 @@ header {
 	align-items: center;
 	border-bottom-right-radius: 40px;
 	border-bottom-left-radius: 40px;
-	padding: 10px 0;
+	padding: 10px 0
 }
 
 .container_header_side {
@@ -383,13 +363,13 @@ header {
 	width: 37.5%;
 	align-items: center;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between
 }
 
 .container_header_side_down,
 .header_burger,
 .header_burger_menu {
-	display: none;
+	display: none
 }
 
 .menu_midle {
@@ -398,11 +378,11 @@ header {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	align-items: center;
+	align-items: center
 }
 
 #icon {
-	width: 30px;
+	width: 30px
 }
 
 .container_logo {
@@ -410,22 +390,22 @@ header {
 	flex-direction: column;
 	align-items: center;
 	align-content: center;
-	row-gap: 15px;
+	row-gap: 15px
 }
 
 #logo_link {
-	text-decoration: none;
+	text-decoration: none
 }
 
 #header_font {
 	color: var(--text-color);
-	text-transform: lowercase;
+	text-transform: lowercase
 }
 
-#header_font:hover,
-#header_font:active {
+#header_font:active,
+#header_font:hover {
 	text-decoration: underline;
-	color: var(--accent-color);
+	color: var(--accent-color)
 }
 
 #logo_font {
@@ -433,30 +413,28 @@ header {
 	color: var(--text-color);
 	line-height: 15px;
 	letter-spacing: 15px;
-	text-transform: uppercase;
+	text-transform: uppercase
 }
 
-
-
-@media (max-width: 1280px) {
+@media (max-width:1280px) {
 	:root {
 		--gap_1: 100px;
 		--gap_2: 200px;
-		--gap_section: 150px;
+		--gap_section: 150px
 	}
 
 	.container_header {
 		flex-direction: column;
 		row-gap: 20px;
-		justify-content: space-between;
+		justify-content: space-between
 	}
 
 	.menu_midle {
-		width: 50%;
+		width: 50%
 	}
 
 	.container_header_side {
-		display: none;
+		display: none
 	}
 
 	.container_header_side_down {
@@ -465,40 +443,37 @@ header {
 		width: 90%;
 		align-items: center;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: space-between
 	}
-
-
 }
 
-
-@media (max-width: 960px) {
+@media (max-width:960px) {
 	:root {
 		--gap_1: 50px;
 		--gap_2: 150px;
-		--gap_section: 100px;
+		--gap_section: 100px
 	}
 
 	header {
-		row-gap: 10px;
+		row-gap: 10px
 	}
 
 	.container_header {
 		flex-direction: row;
 		justify-content: center;
-		align-content: center;
+		align-content: center
 	}
 
 	.menu_midle {
-		width: 90%;
+		width: 90%
 	}
 
 	.container_header_side_down {
-		display: none;
+		display: none
 	}
 
 	#icon {
-		width: 20px;
+		width: 20px
 	}
 
 	.header_burger {
@@ -508,7 +483,7 @@ header {
 		width: 50px;
 		height: 50px;
 		border-radius: 100px;
-		background-color: var(--text-color-white);
+		background-color: var(--text-color-white)
 	}
 
 	.header_burger_menu {
@@ -518,24 +493,19 @@ header {
 		align-items: center;
 		background-color: var(--text-color-white);
 		width: 100%;
-		height: 500px;
+		height: 500px
 	}
-
 
 	#rings {
-		display: none;
+		display: none
 	}
-
-
 }
 
-
-/* СТИЛИЗАЦИЯ FOOTER */
 footer {
 	background: linear-gradient(var(--accent-color-light) 15%, var(--accent-color) 85%);
 	width: 100%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column
 }
 
 .footer_nav {
@@ -543,51 +513,36 @@ footer {
 	display: flex;
 	flex-direction: row;
 	align-self: center;
-	column-gap: 90px;
+	column-gap: 90px
 }
 
 .cont_h3 {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 15px
 }
 
 .icons {
 	margin-top: 10px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-between
 }
 
 .logo {
-	margin-top: 50px;
+	margin-top: 50px
 }
 
 #right {
-	color: white;
+	color: #fff;
 	text-align: right;
-	opacity: 80%;
+	opacity: 80%
 }
 
-
-
-
-
-
-
-
-
-
-
-/* СТИЛИЗАЦИЯ ГЛАВНОЙ СТРАНИЦЫ */
 body {
-	background: linear-gradient(var(--accent-color-light) 15%,
-			var(--accent-color) 35%,
-			var(--accent-color-light) 70%,
-			var(--accent-color) 100%);
+	background: linear-gradient(var(--accent-color-light) 15%, var(--accent-color) 35%, var(--accent-color-light) 70%, var(--accent-color) 100%)
 }
 
-/* HERO */
 .section_main_screen {
 	width: 100vw;
 	background: var(--text-color-white);
@@ -595,61 +550,60 @@ body {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between
 }
 
 .section_main_screen_content {
 	width: 55%;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	align-content: center
 }
 
 #rings {
-	width: 40%;
+	width: 40%
 }
 
 .paper,
 .store_name {
-	width: 100%;
+	width: 100%
 }
 
-/* NEW COLLECTOIN */
 .section_new_collection {
 	display: flex;
-	flex-direction: column;
+	flex-direction: column
 }
 
 .section_new_collection_items {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: center
 }
 
 .article_new {
-	width: 100%;
+	width: 100%
 }
 
 #new1 {
-	grid-area: n1;
+	grid-area: n1
 }
 
 #new2 {
-	grid-area: n2;
+	grid-area: n2
 }
 
 #new5 {
 	width: 100%;
-	grid-area: n5;
+	grid-area: n5
 }
 
 #new3 {
-	grid-area: n3;
+	grid-area: n3
 }
 
 #new4 {
-	grid-area: n4;
+	grid-area: n4
 }
 
 .grid {
@@ -660,9 +614,7 @@ body {
 	grid-template-rows: 1fr 1fr;
 	grid-column-gap: 5%;
 	grid-row-gap: 5%;
-	grid-template-areas:
-		"n1 n5 n3"
-		"n2 n5 n4";
+	grid-template-areas: "n1 n5 n3" "n2 n5 n4"
 }
 
 .article_new,
@@ -671,61 +623,58 @@ body {
 	align-items: center;
 	justify-content: center;
 	width: 300px;
-	height: 100%;
+	height: 100%
 }
 
 .article_new5 {
-	width: 100%;
+	width: 100%
 }
 
-/* NEW COLLECTION */
 .section_about_new_collection {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	column-gap: 50px;
-	background-color: var(--text-color-white);
+	background-color: var(--text-color-white)
 }
 
 .about_new_collection_text {
 	width: 50%;
 	display: flex;
-	flex-direction: column;
+	flex-direction: column
 }
 
 #stars {
 	width: 35%;
-	margin-right: 50px;
+	margin-right: 50px
 }
 
-/* ABOUT COMPAHY */
 .section_about_company {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
 	background: var(--text-color-white);
-	overflow: hidden;
+	overflow: hidden
 }
 
 .hand {
-	width: 40%;
+	width: 40%
 }
 
-/* наши услуги */
 .section_our_services {
 	height: max-content;
 	background-color: var(--text-color-white);
 	display: flex;
 	flex-direction: column;
-	row-gap: 50px;
+	row-gap: 50px
 }
 
 .container_our_services {
 	height: 100%;
 	display: flex;
 	flex-direction: column;
-	align-content: center;
+	align-content: center
 }
 
 .service {
@@ -738,35 +687,34 @@ body {
 	align-items: start;
 	justify-content: space-between;
 	border-bottom: solid 5px var(--accent-color);
-	transition: 1.5s;
+	transition: 1.5s
 }
 
 #service_list li {
 	list-style: outside;
-	list-style-type: disc;
+	list-style-type: disc
 }
 
 .service_list {
-	margin-top: 15px;
+	margin-top: 15px
 }
 
-/* стилизация выпадающей информации */
 .service:hover {
 	animation-name: service_height_hover;
 	animation-duration: 1s;
 	animation-timing-function: ease;
 	animation-fill-mode: both;
 	animation-delay: alternate-reverse;
-	transition-property: height;
+	transition-property: height
 }
 
 @keyframes service_height_hover {
 	from {
-		padding-bottom: 1%;
+		padding-bottom: 1%
 	}
 
 	to {
-		padding-bottom: 2%;
+		padding-bottom: 2%
 	}
 }
 
@@ -776,12 +724,12 @@ body {
 	animation-timing-function: ease;
 	animation-fill-mode: both;
 	animation-delay: alternate-reverse;
-	transition-property: height;
+	transition-property: height
 }
 
 @keyframes service_height_hover_after {
 	from {
-		padding-bottom: 2%;
+		padding-bottom: 2%
 	}
 
 	to {
@@ -789,63 +737,386 @@ body {
 	}
 }
 
-
 .service_photo {
 	width: 15%;
-	margin-right: 300px;
+	margin-right: 300px
 }
 
-/* Стили для текста, который должен появляться */
 .service_text {
 	opacity: 0;
 	visibility: hidden;
-	transition: opacity 1s linear, visibility 1s linear, transform 1s linear;
+	transition: opacity 1s linear, visibility 1s linear, transform 1s linear
 }
 
-/* Появление текста при наведении */
 .service:hover .service_text {
 	opacity: 1;
-	visibility: visible;
+	visibility: visible
 }
 
 .service_photo {
-	transition: transform 1s ease;
+	transition: transform 1s ease
 }
 
 .service:hover .service_photo {
-	transform: scale(1.1);
+	transform: scale(1.1)
 }
 
-
-
-/* ФОРМА */
 .form {
-	background-color: var(--text-color-white);
+	background-color: var(--text-color-white)
 }
 
 .form_down {
 	display: flex;
 	flex-direction: row;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: space-between
 }
 
 .form_right {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 50%
 }
 
 .subscribe {
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
-	row-gap: 25px;
+	row-gap: 25px
 }
 
 .checkbox_ {
 	display: flex;
 	flex-direction: row;
 	accent-color: var(--accent-color);
-	column-gap: 15px;
+	column-gap: 15px
+}
+
+.section_catalog {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px;
+	background-color: var(--text-color-white)
+}
+
+.container_category {
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	transition: transform .8s ease
+}
+
+.container_category:hover {
+	transform: scale(1.05)
+}
+
+.container_category:not(:hover) {
+	transform: scale(1)
+}
+
+.catalog_category_item {
+	width: 20%;
+	max-width: 30%
+}
+
+.category {
+	padding: 0 var(--gap_1);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between
+}
+
+.section_collections {
+	background-color: var(--text-color-white);
+	display: flex;
+	flex-direction: column;
+	row-gap: 100px
+}
+
+.section_for_items {
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px
+}
+
+.collection_items {
+	padding: 0 var(--gap_2);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(500px, 2.5fr));
+	grid-column-gap: 2vw;
+	grid-row-gap: 2vh
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	border: 3px solid;
+	border-color: var(--accent-color);
+	border-radius: 40px;
+	padding: 25px;
+	transition: color 1s ease;
+	justify-content: space-between
+}
+
+.item_info {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center
+}
+
+#item_photo {
+	width: 75%
+}
+
+.item:hover {
+	cursor: pointer
+}
+
+.section_collections {
+	display: flex;
+	flex-direction: column;
+	row-gap: 100px
+}
+
+.collection2,
+.collection3,
+.collection4,
+.collection5,
+.new_collection1 {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px
+}
+
+.container_collection {
+	padding: 0 var(--gap_2);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between
+}
+
+.container_collection {
+	transition: transform .8s ease
+}
+
+.container_collection:hover {
+	transform: scale(1.05)
+}
+
+.container_collection:not(:hover) {
+	transform: scale(1)
+}
+
+.collection_items {
+	padding: 0 var(--gap_2);
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	grid-template-rows: repeat(auto-fit, minmax(500px, 2.5fr));
+	grid-column-gap: 2vw;
+	grid-row-gap: 2vh
+}
+
+.item {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 20px;
+	border: 3px solid;
+	border-color: var(--accent-color);
+	border-radius: 40px;
+	padding: 25px;
+	transition: color 1s ease;
+	justify-content: space-between
+}
+
+.item_info {
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	text-align: center
+}
+
+#item_photo {
+	width: 75%
+}
+
+.item:hover {
+	cursor: pointer
+}
+
+.section_product {
+	display: grid;
+	grid-template-columns: 1.5fr 1fr 1.5fr;
+	grid-template-rows: 2fr;
+	grid-template-areas: "ga_pr1 ga_pr2 ga_pr3" "ga_pr1 ga_pr2 ga_pr3" "ga_pr1 ga_pr2 ga_pr3";
+	justify-items: center
+}
+
+#ga_pr1 {
+	grid-area: ga_pr1
+}
+
+#ga_pr2 {
+	grid-area: ga_pr2
+}
+
+#ga_pr3 {
+	grid-area: ga_pr3
+}
+
+.section_product_info {
+	width: 100%;
+	background-color: var(--accent-color-light);
+	display: flex;
+	justify-content: center;
+	align-items: center
+}
+
+.form_down {
+	display: flex;
+	flex-direction: row;
+	column-gap: 50px;
+	align-items: center
+}
+
+.form_right {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-content: center;
+	row-gap: 20px;
+	background: var(--text-color-white)
+}
+
+.subscribe {
+	margin-top: 20px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px
+}
+
+#form_bot {
+	width: fit-content;
+	text-align: center;
+	align-self: center
+}
+
+#stars_reg {
+	width: 40%
+}
+
+.section_our_services {
+	background-color: #fbfbff;
+	display: flex;
+	flex-direction: column;
+	row-gap: 50px
+}
+
+.container_our_services {
+	display: flex;
+	flex-direction: column;
+	align-content: center
+}
+
+.service {
+	position: relative;
+	overflow: hidden;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	flex-direction: row;
+	align-items: start;
+	justify-content: space-between;
+	border-bottom: solid 5px var(--accent-color);
+	transition: 1.5s
+}
+
+.service_photo {
+	width: 200px;
+	margin-right: 300px
+}
+
+#service_list li {
+	list-style: outside;
+	list-style-type: disc
+}
+
+.service_list {
+	margin-top: 15px
+}
+
+.service:hover {
+	animation-name: service_height_hover;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+	animation-delay: alternate-reverse;
+	transition-property: height
+}
+
+@keyframes service_height_hover {
+	from {
+		height: 250px
+	}
+
+	to {
+		height: 350px
+	}
+}
+
+.service:not(:hover) {
+	animation-name: service_height_hover_after;
+	animation-duration: 1s;
+	animation-timing-function: ease;
+	animation-fill-mode: both;
+	animation-delay: alternate-reverse;
+	transition-property: height
+}
+
+@keyframes service_height_hover_after {
+	from {
+		height: 350px
+	}
+
+	to {
+		height: 200px
+	}
+}
+
+.service_photo {
+	margin-right: 300px;
+	width: fit-content
+}
+
+.service_text {
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 1s linear, visibility 1.5s linear, transform 2s linear;
+	padding: 20px
+}
+
+.service:hover .service_text {
+	opacity: 1;
+	visibility: visible
+}
+
+.service_photo {
+	transition: transform 1s ease
+}
+
+.service:hover .service_photo {
+	transform: scale(1.1)
 }
