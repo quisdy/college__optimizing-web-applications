@@ -522,10 +522,25 @@ footer {
 	column-gap: 90px
 }
 
+.contact_information,
+.menu,
+.catalog,
+.policy {
+	display: flex;
+	flex-direction: column;
+	row-gap: 15px;
+}
+
+.footer_list{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
 .cont_h3 {
 	display: flex;
 	flex-direction: column;
-	gap: 15px
+	gap: 10px;
 }
 
 .icons {
