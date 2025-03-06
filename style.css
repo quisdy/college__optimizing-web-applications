@@ -267,7 +267,7 @@ button:focus {
 }
 
 .p_button {
-	color: var(--white);
+	color: var(--text-color-white);
 	font-weight: 800;
 	text-transform: uppercase;
 }
