@@ -178,7 +178,6 @@ p {
 	text-align: center
 }
 
-
 #h3_footer {
 	color: var(--text-color-white)
 }
@@ -265,6 +264,12 @@ button:focus {
 	align-self: center;
 	cursor: pointer;
 	transition: 1s
+}
+
+.p_button {
+	color: var(--white);
+	font-weight: 800;
+	text-transform: uppercase;
 }
 
 #button_white {
@@ -537,7 +542,8 @@ footer {
 #right {
 	color: #fff;
 	text-align: right;
-	opacity: 80%
+	align-self: end;
+	opacity: 70%
 }
 
 body {
