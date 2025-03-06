@@ -10,11 +10,6 @@
 	box-sizing: border-box
 }
 
-body,
-html {
-	font-size: 62.5%
-}
-
 @font-face {
 	font-family: 'Geist Black';
 	src: url(fonts/Geist-Black.woff2) format('woff2');
@@ -95,13 +90,53 @@ p {
 	letter-spacing: .5rem
 }
 
+h1,
+h2,
+h3,
+p {
+	width: fit-content;
+	font-size: inherit;
+	font-weight: inherit;
+	letter-spacing: .3rem;
+	color: var(--text-color);
+}
+
+h1,
+h2,
+h3 {
+	text-transform: uppercase;
+	line-height: 80%;
+}
+
+h1,
+p {
+	font-family: Geist;
+}
+
+h2,
+h3 {
+	font-family: Kudry;
+	font-weight: 300;
+}
+
 h1 {
 	color: var(--accent-color);
-	font-family: Geist;
-	font-size: 11rem;
+	font-size: 5rem;
 	font-weight: 500;
-	line-height: 11rem;
-	text-transform: uppercase
+}
+
+h2 {
+	font-size: 4rem;
+}
+
+h3 {
+	font-size: 3rem;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1.063rem;
+	text-align: justify
 }
 
 #h1_white {
@@ -122,14 +157,6 @@ h1 {
 	align-items: center
 }
 
-h2 {
-	color: var(--text-color);
-	font-family: Kudry;
-	font-size: 8rem;
-	font-weight: 300;
-	line-height: 7rem;
-	text-transform: uppercase
-}
 
 .h2_purple {
 	color: var(--accent-color)
@@ -151,39 +178,13 @@ h2 {
 	text-align: center
 }
 
-h3 {
-	color: var(--text-color);
-	font-family: Kudry;
-	font-size: 4.8rem;
-	font-weight: 300;
-	line-height: 4.8rem;
-	text-transform: uppercase
-}
 
 #h3_footer {
 	color: var(--text-color-white)
 }
 
-h4 {
-	color: var(--text-color-white);
-	font-family: Geist;
-	font-size: 1.6rem;
-	font-weight: 800;
-	line-height: 1.6rem;
-	text-transform: uppercase
-}
-
 .h4_accent {
 	color: var(--accent-color)
-}
-
-p {
-	color: var(--text-color);
-	font-family: Geist;
-	font-size: 1.6rem;
-	font-weight: 400;
-	line-height: 2rem;
-	text-align: justify
 }
 
 .name_item_font,
